@@ -10,22 +10,7 @@ RSpec.describe SearchResultsController do
     
     it "renders a 200 response" do
       get :index
-      expect(response).to be_successful
-    end
-
-    it "returns a set of surf spots" do
-      get :index
-      expect(response.body).to eq({ 
-        data: [
-          {
-            id: spot.id,
-            name: spot.name, 
-            description: spot.description,
-            created_at: spot.created_at,
-            updated_at: spot.updated_at
-          } 
-        ]
-      }.to_json)
+      expect(response).to render_component('SearchResults')
     end
   end
 end
