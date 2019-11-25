@@ -1,6 +1,5 @@
 class SearchResultsController < ApplicationController
   def index
-    spots = Spot.all
-    render json: { data: spots }
+    @spots = Spot.all.to_json
   end
 end
