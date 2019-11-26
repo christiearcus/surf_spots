@@ -6,7 +6,7 @@ const SearchResults = props => {
   
   return (
     <div>
-      <h1>Search results page</h1>
+      <h1>Surf spots app</h1>
     </div>
   );  
 }
