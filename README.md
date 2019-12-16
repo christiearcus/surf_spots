@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a pet project for discovering surf spots
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+TBC
 
-* System dependencies
+## Run locally
 
-* Configuration
+client
 
-* Database creation
+```
+sh -c 'rm -rf public/packs/* || true && bundle exec rake react_on_rails:locale && bin/webpack -w'
+```
 
-* Database initialization
+server
 
-* How to run the test suite
+```
+bundle exec puma -C config/puma.rb
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Deploy with Heroku
 
-* Deployment instructions
+TBC
 
-* ...
+## Tests
+
+TBC
