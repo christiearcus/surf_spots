@@ -22,8 +22,22 @@ bundle exec puma -C config/puma.rb
 
 ## Deploy with Heroku
 
-TBC
+- Login to Heroku with the correct remote set
+- Make sure your changes are on the master branch
+- `git push heroku master`
 
 ## Tests
 
-TBC
+`rspec`
+
+For single specs
+
+`rspec [FILE PATH HERE]`
+
+## Get API results
+
+There is currently one endpoint setup to get a list of surf spots. You can get this at:
+
+```
+https://christie-metson-surf-spots.herokuapp.com/api/spots.json
+```
